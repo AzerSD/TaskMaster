@@ -4,10 +4,10 @@
 #include <string>
 
 class ConfigParser {
-public:
-    ConfigParser(const std::string& path);
-    std::map<std::string, ProgramConfig> parse();
+    public:
+        ConfigParser(const std::string& path);
+        std::map<std::string, ProgramConfig> parse();
 
-private:
-    std::string path_;
+    private:
+        std::string path_;
 };
