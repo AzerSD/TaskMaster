@@ -9,7 +9,7 @@ struct ProgramConfig {
     int                 numProcs = 1;
     bool                autostart = true;
     std::string         autorestart = "unexpected"; // always, never, unexpected
-    std::vector<int>    exitcodes = {0};
+    std::vector<int>    exitcodes = {};
     int                 startRetries = 3;
     int                 startTime = 5;
     std::string         stopSignal = "TERM";
