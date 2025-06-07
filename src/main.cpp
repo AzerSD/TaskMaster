@@ -2,6 +2,7 @@
 #include "process_manager.hpp"
 #include <iostream>
 #include <memory>
+#include <thread>       // For sleep_for()
 
 int main(int argc, char* argv[]) {
     std::string configPath = "../config/taskmaster.yml";
@@ -14,6 +15,12 @@ int main(int argc, char* argv[]) {
             std::cout << "Starting program: " << name << std::endl;
             ProcessManager pm(cfg);
             pm.start();
+
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+            pm.status();
+
+            pm.stop();
+            pm.status();
         }
     }
 

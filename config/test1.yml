@@ -1,6 +1,6 @@
 programs:
-  nginx:
-    cmd: "/bin/echo"
+  echo:
+    cmd: "/bin/bash /Users/asioud/Desktop/Projects/TaskMaster/config/script.sh"
     numprocs: 1
     autostart: true
     autorestart: unexpected
