@@ -1,18 +1,6 @@
 programs:
-  nginx:
-    cmd: "/usr/local/bin/nginx"
-    numprocs: 1
+  echo:
+    cmd: "/bin/echo -e Hello, Taskmaster!"
+    numprocs: 5
     autostart: true
-    autorestart: unexpected
-    exitcodes: [0, 2]
-    starttime: 5
-    startretries: 3
-    stopsignal: TERM
-    stoptime: 10
-    stdout: "/tmp/nginx.out"
-    stderr: "/tmp/nginx.err"
-    env:
-      ENV: "production"
-      PORT: "8080"
-    workingdir: "/tmp"
-    umask: 22
+    stdout: "/tmp/echo.out"

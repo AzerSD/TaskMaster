@@ -1,0 +1,15 @@
+programs:
+  nginx:
+    cmd: "/bin/echo"
+    numprocs: 1
+    autostart: true
+    autorestart: unexpected
+    exitcodes: [0, 2]
+    starttime: 5
+    startretries: 3
+    stopsignal: TERM
+    stoptime: 10
+    stdout: "/tmp/test1.out"
+    stderr: "/tmp/test1.err"
+    workingdir: "/tmp"
+    umask: 22

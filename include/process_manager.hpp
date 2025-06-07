@@ -11,6 +11,7 @@ public:
     void restart();
     void status() const;
     void monitor(); // Optional: Background monitoring thread
+    std::vector<std::string> tokenize(const std::string& cmd);
 
 private:
     ProgramConfig config_;
