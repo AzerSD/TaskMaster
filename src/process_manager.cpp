@@ -144,7 +144,6 @@ void ProcessManager::status() const {
 }
 
 
-
 ProcessManager::ProcessManager(const ProgramConfig& config)
     : config_(config) {}
 

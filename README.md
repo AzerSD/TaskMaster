@@ -12,8 +12,8 @@ This project is implemented in **C++**, using only the **standard library** (wit
 
 ### 🔧 Core Functionality
 
-- [ ] Parse configuration file (YAML or custom format)
-- [ ] Launch processes based on configuration
+- [x] Parse configuration file (YAML or custom format)
+- [x] Launch processes based on configuration
 - [ ] Monitor processes and track status (alive/dead)
 - [ ] Implement auto-restart logic based on config
 - [ ] Handle `SIGHUP` to reload configuration
